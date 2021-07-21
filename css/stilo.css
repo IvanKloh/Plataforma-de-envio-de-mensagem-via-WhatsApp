@@ -1,0 +1,410 @@
+
+/*
+Descricao: plataforma de envio de mensagem via whatsapp
+Autor: Ivan Kloh
+Data: 03/05/2021 até 28/05/2021
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css);
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+@import url(https://cdn.datatables.net/buttons/1.0.3/css/buttons.dataTables.min.css);
+@import url(https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css);
+@import url(https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css);
+#botaoModalWhats{
+   margin-left: 58%;
+    width: 182;
+    background-color: #1565C0 !important;
+    z-index: 55;
+    position: relative;
+    top: 85px;
+    display: flex;
+
+}
+#botaoModal{
+    margin-left: 78%; 
+    width: 100px;
+    background-color: #1565C0 !important; 
+    z-index: 55; 
+    position: relative; 
+    top: 120px;
+    display: flex;
+}
+#fieldset{
+    border: 1px solid #c0c0c0;
+    height: 290px;
+    width: 100px; 
+    right: 20px;
+}
+#atendimento{
+     width: 100px;
+     color: black;
+     position: relative;
+     bottom: 26px;
+     left: 8px;
+}
+#nome{
+    width: 250px;
+    color: black;
+    position: relative;
+    bottom: 26px!important;
+}
+#fone{
+    width: 120px;
+    color: black;
+    position: relative;
+    bottom: 26px!important;
+}
+#primeiroNome{
+    position: relative; 
+    right: 5px;
+}
+#labelAten{
+    position: relative;
+    left: 8;
+    color: black;
+}
+#labelNome{
+    position: relative;
+    left: 190px;
+    bottom: 180px;
+}
+#labelFone{
+    position: relative;
+    left: 507px;
+    bottom: 320px;
+}
+#mensagem{
+    position: relative; 
+    width: 639px; 
+    bottom: 400px;
+    color: black;
+}
+#tabela{
+    position: relative;
+    bottom: 160px;
+    z-index: 51;
+    right: 118px; 
+    width: 1158px; 
+    border-radius: 7px;
+}
+#erro{
+    background-color:red;
+    color: white; 
+    position: relative; 
+    left: 355px;
+    width: 51%; 
+    text-align: center;
+    top: 10px;
+}
+#user{
+    
+    color: white;
+    position: relative;
+    left: 66%;
+    width: 51%;
+    text-align: center;
+    font-size: 18px;
+    bottom: 87px;
+    font-size: 16px;
+    display: flex;
+
+}
+#sair{
+    height: 30px;
+    color: white;
+    position: relative;
+    left: 90%;
+    width: 100px;
+    text-align: center;
+    bottom: 150;
+    cursor: pointer;
+    font-size: 16px;
+   display: flex;
+
+}
+#local{
+    padding-top: 50px;
+    width: 51%;
+    left: 350px;
+    position: relative;
+    text-align: center;
+
+}
+.container{
+    color: black;
+    position: relative;
+    top: 110px;
+    height: 50px;
+
+}
+.white-text{
+    width: 81px;
+}
+#modalWhats{
+    position: relative;
+    height: 400px;
+    position: fixed;
+    width: 700px;
+    overflow-y:auto;
+    z-index: 56;
+    left: 44px;
+}
+#myModal{
+    position: relative;
+    height: 400px;
+    position: fixed;
+    width: 700px;
+    overflow-y:auto;
+    z-index: 56;
+    left: 44px;
+    bottom: 100px!important;
+}
+.vazio{
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 49;
+}
+h5{
+    color: white;
+}
+
+
+nav a{
+    color: black;
+}
+
+a{
+    font-size: 16px !important;
+    font-family: arial,monospace !important;
+
+}
+th::after{
+    display: none !important;
+}
+ th{ 
+    border:solid 2px black;/*borda preta */
+    font-family: Arial;/*tipo de fonte */
+    background-color:#000000;/* verde forte */
+    color: white;/*cor barnca */
+    text-align: center;/*texto alinhado no centro */
+    font-size: 16px;/*tamanho da fonte*/
+}
+legend{
+    text-align: center; 
+    color: black;
+}
+.float{
+    position: relative;
+ 
+}
+
+.float .dica {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Arial;/*fonte da letra */
+    position: absolute;
+    z-index: 1;
+}
+
+.float:hover .dica {
+   visibility: visible;
+}
+tr:nth-child(even) {
+    background-color: #FFF!important;
+}
+tr:nth-child(odd) {
+    background-color: #e5e5e5!important;
+}
+nav .nav-wrapper {
+    position: relative;
+    height: 100px;
+}
+#topo {
+    padding: 0 10px;
+    background-color: #00695c!important; 
+    position: fixed !important;
+    height: 100px !important;
+    width: 100%!important;
+    z-index: 56!important;
+    top: 0px;
+    font-size: 15px;
+}
+
+.asterisco{
+    color: red;
+    width: 10px; 
+    height: 10px;
+    position: relative;
+    right: 10px;
+    top: 12px;
+}
+.modal-content{
+    padding: 24px;
+    position: relative;
+    right: 14px;
+}
+
+.quadro{
+    background-color: #2196F3;
+    color: white;
+    position: relative;
+    width: 24%;
+    text-align: center;
+    top: 10px;
+    height: 199px;
+}
+#busca{
+    color: white;
+    position: relative;
+    top: 95px;
+    right: 35px;
+}
+.card-panel {
+    padding: 24px;
+    margin: .5rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+p.teaser {
+    text-indent: 30px;
+}
+label {
+    color: black;
+}
+
+.dt-button buttons-excel buttons-html5 {
+     color: #4dc0b5;
+}
+
+.modal {
+    width: 10%;
+
+}
+
+#preloader {
+    position: absolute;
+    left: 0px;
+    right: 0%;
+    bottom: 0px;
+    top: 5%;
+    text-align: right;
+    background: #e0e0e0;
+}
+#result {
+    padding: 2px;
+    margin: 2px;
+}
+#result p {
+    padding: 10px;
+    font-size: 12pt;
+}
+#result > a {
+    padding: 10px;
+    font-size: 14pt;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.icon_style {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    width: 5%;
+    margin-top: 5%;
+    padding: 1px;
+    float: left;
+}
+
+#menu ul li {
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+}
+
+#menu a:link {
+
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+
+#menu a:hover {
+    background: #E5F0FF;
+    color: #039;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+
+.layout {
+    width: 400px;
+    height: 200px;
+
+    margin-left: 2%;
+}
+
+
+.layout .card-panel {
+    height: 90%;
+
+
+}
+.dt-buttons {
+    position: relative;
+    
+}
+button,  optgroup,input, select, textarea {
+    font: menu;
+    
+    
+}
+.confirm{
+   
+    font-size: 28px !important;
+    font-family: bold !important;
+}
+.input{
+    width: auto !important;
+    font-size: 25px !important;
+    font-family:  bold !important;
+    border-color: white !important;
+}
+a{
+    font: menu;
+}
+.dataTables_info{
+  font-size: 16px;  
+}
+#dataTables_paginate{
+   font-size: 16px;  
+       color: #666 !important  
+}
+.navbar-fixed{
+    z-index: 1!important;
+}

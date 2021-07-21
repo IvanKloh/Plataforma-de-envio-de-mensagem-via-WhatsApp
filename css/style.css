@@ -1,0 +1,122 @@
+
+
+
+
+
+.card-panel {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: .5rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+p.teaser {
+    text-indent: 30px;
+}
+
+label {
+    color: black;
+}
+
+.dt-button buttons-excel buttons-html5 {
+    color: #4dc0b5;
+}
+
+.modal {
+    width: 10%;
+}
+
+#preloader {
+    position: absolute;
+    left: 0px;
+    right: 0%;
+    bottom: 0px;
+    top: 5%;
+    text-align: right;
+    background: #e0e0e0;
+}
+
+
+
+#result {
+    padding: 2px;
+    margin: 2px;
+}
+
+#result p {
+    padding: 10px;
+    font-size: 12pt;
+}
+
+#result > a {
+    padding: 10px;
+    font-size: 14pt;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.icon_style {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    width: 5%;
+    margin-top: 5%;
+    padding: 1px;
+    float: left;
+}
+
+#menu ul li {
+    margin: 0;
+    padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+}
+
+#menu a:link {
+
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+
+#menu a:hover {
+    background: #E5F0FF;
+    color: #039;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+
+.layout {
+    width: 400px;
+    height: 200px;
+
+    margin-left: 2%;
+}
+
+
+.layout .card-panel {
+    height: 90%;
+
+
+}
+
+
+

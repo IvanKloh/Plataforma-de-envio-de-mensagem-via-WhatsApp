@@ -1,0 +1,32 @@
+
+/*
+Descricao: plataforma de envio de mensagem via whatsapp
+Autor: Ivan Kloh
+Data: 03/05/2021 até 28/05/2021
+*/
+
+#login{
+		background-color:#f2f2f2;/*cor cinza claro */
+		width: 600px;/*largura*/
+		border-radius: 7px;/*arrendar o cantos*/
+		margin-bottom: 10px; /*margem do botao*/
+		align-content: center;/*texto alimhado no centro*/
+		
+		position: relative;
+		padding: 9px 20px;/*preenchimento */
+		font-size:25px;
+		font-family: Arial;/*fonte da letra */
+		
+	}
+ #login input[type=text], input[type=password]{
+    	width:100%;/*largura */
+    	padding: 12px 20px;/*bordas arredondadas*/
+    	margin: 8px 0;/*margem*/
+    	display: inline-block;
+    	border:1px solid #ccc;
+    	border-radius: 7px;/*bordas arredondadas */
+    	box-sizing: border-box;
+    	font-family: Arial;/*fonte da letra */
+		font-size:20px;
+
+    }
